@@ -14,6 +14,15 @@ app.get("/", (req, res) => {
   // res.redirect(`/${uuidV4()}`);
   res.redirect(`/home`);
 });
+///
+app.get("/create", (req, res) => {
+  res.redirect(`/create_room/${uuidV4()}`);
+});
+//
+app.get("/create_room/:new_room", (req, res) => {
+  res.render("new_room", { roomId: req.params.new_room });
+});
+
 // /
 app.get("/rooms/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
