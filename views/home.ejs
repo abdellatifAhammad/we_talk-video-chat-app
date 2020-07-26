@@ -10,6 +10,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    <style>
+      .run-btn {
+        width: 50%;
+      }
+      @media only screen and (min-width: 760px) {
+        .run-btn {
+          width: 12%;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -19,7 +29,7 @@
       <a
         class="navbar-brand"
         style="font-family: 'Dancing Script', cursive;"
-        href="#"
+        href="/"
         >We talk</a
       >
       <button
@@ -30,13 +40,15 @@
         aria-controls="collapsibleNavId"
         aria-expanded="false"
         aria-label="Toggle navigation"
-      ></button>
+      >
+        <i class="fa fa-list" aria-hidden="true"></i>
+      </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a
               class="nav-link"
-              href="#"
+              href="/home"
               style="font-family: 'Dancing Script', cursive;"
               >Home <span class="sr-only">(current)</span></a
             >
@@ -48,7 +60,7 @@
       class="mt-4 pt-4"
       style="
         background-color: #2c2a59;
-        height: 90vh;
+        height: auto;
         clip-path: polygon(100% 0, 100% 82%, 50% 100%, 0 82%, 0 0);
       "
     >
@@ -132,7 +144,7 @@
               <small id="helpId" class="form-text text-muted"
                 >get it from your freinds
               </small>
-              <div class="mx-auto" style="width: 12%;">
+              <div class="mx-auto run-btn" id="run-btn">
                 <button
                   type="button"
                   class="btn mx-auto mt-2"
