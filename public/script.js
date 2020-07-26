@@ -3,6 +3,7 @@ const videoGrid = document.getElementById("video-box");
 const myPeer = new Peer(undefined, {
   host: "b510cfc954a6.ngrok.io",
 });
+const cpoied = false;
 const people = {};
 const myVideo = document.createElement("video");
 myVideo.muted = true;
@@ -62,14 +63,26 @@ function connectToNewUser(userId, stream) {
 function copy() {
   /* Get the text field */
   var copyText = document.getElementById("roomID_share");
+  var text = document.getElementById("copied");
 
   /* Select the text field */
   copyText.select();
+  console.log("====================================");
+  console.log(copyText.select());
+  console.log("====================================");
   copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  navigator.clipboard.writeText(copyText.value).then(
+    function () {
+      // texto.style.color = "#3E8C49";
+      text.style.display = "block";
+      /* Alert the copied text */
+      // alert("Copied the text: " + copyText.value);
+    },
+    function (err) {
+      console.error("Async: Could not copy text: ", err);
+    }
+  );
+  // /* Copy the text inside the text field */
+  // document.execCommand("copy");
 }

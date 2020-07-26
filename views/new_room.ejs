@@ -50,10 +50,57 @@
           <div class="col-md-5">
             <img src="/img/new_room.png" class="img-fluid" alt="" />
           </div>
+          <div class="col-md-7 mt-4">
+            <h3
+              class="mt-4 text-center"
+              style="font-family: 'Dancing Script', cursive; color: #080a40;"
+            >
+              here we go now you can send it to your freinds and start talking
+            </h3>
+            <div class="text-center mt-3">
+            <input id="roomID_share" style="display: none;" type="text"  class="text-center" value="<%= roomId %>"><%= roomId %></input>
+          </div>
+            <div class="mx-auto" style="width: 40%;">
+              <button
+                type="button"
+                onclick="copy()"
+                class="btn mx-auto mt-4"
+                style="
+                  background-color: #2c2a59;
+                  color: #d8def2;
+                  width: 100%;
+                  border-radius: 30px;
+                "
+              >
+                copy the room ID
+              </button>
+            </div>
+          </div>
         </div>
+          <div class="mx-auto mb-4 text-center" style="width: 10%;">
+            <a href="/rooms/<%= roomId %>" type="button" class="btn  mb-4" style="width: 100%;width: 80px;height: 80px;border-radius: 50px;background-color: #4A79D9;padding-top: 30px;">
+            
+              <i class="fa fa-play" aria-hidden="true" style="color: #D8DEF2;"></i>
+            </a>
+            <h2 class="text-center" style="font-family: 'Dancing Script', cursive; color: #080a40;">start</h2>
+          </div>
+
+        <div id="copied" style="display: none;background-color: #4A79D9; border-radius: 6px;" class="alert alert-success alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" style="color: #D8DEF2;">&times;</span>
+          </button>
+          <strong style="color: #D8DEF2;">yep now you can share it  </strong> 
+        </div>
+        
+        <script>
+          $(".alert").alert();
+        </script>
+
+
       </div>
     </section>
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/script.js" defer></script>
   </body>
 </html>
