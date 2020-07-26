@@ -11,11 +11,16 @@ app.use(express.static("public"));
 
 // @route
 app.get("/", (req, res) => {
-  res.redirect(`/${uuidV4()}`);
+  // res.redirect(`/${uuidV4()}`);
+  res.redirect(`/home`);
 });
 // /
-app.get("/:room", (req, res) => {
+app.get("/rooms/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
+});
+// home page
+app.get("/home", (req, res) => {
+  res.render("home");
 });
 //@socket.io conf
 
