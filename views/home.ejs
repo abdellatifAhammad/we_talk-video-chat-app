@@ -135,7 +135,7 @@
                 type="text"
                 class="form-control"
                 name=""
-                id=""
+                id="join_room"
                 style="width: 100%;"
                 class="mx-auto"
                 aria-describedby="helpId"
@@ -147,6 +147,7 @@
               <div class="mx-auto run-btn" id="run-btn">
                 <button
                   type="button"
+                  onclick="join()"
                   class="btn mx-auto mt-2"
                   style="
                     background-color: #4a79d9;
@@ -165,13 +166,79 @@
       </div>
     </section>
     <section style="height: 90vh;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12"></div>
+      <div class="container mt-4">
+        <h3 style="font-family: 'Dancing Script', cursive;" class="text-center">
+          About the developer
+        </h3>
+        <div class="row mt-4 pt-4 mb-4">
+          <div class="col-md-6 mt-4 pt-4">
+            <div
+              class="mx-auto"
+              style="
+                background: url('/img/me.jpg') center center;
+                background-size: cover;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 22px;">
+              Hi I am Abdellatif Ahammad, I am a CS student and also a full
+              stack developer , I live in Morocco and I like to make open source
+              projects and to help the comunity to grow up. in this project I
+              used some technologies suach as nodejs ,express ,peerjs ,socket.io
+              in the backend for the frontend part I use ejs template engine
+              with the classic js, bootstrap version4 and foontawesome free
+              icons I hope you like this project if yes give it a star in github
+              and if you fllow me I would be happy
+            </p>
+            <a
+              href="https://github.com/abdellatifAhammad"
+              type="button"
+              class="btn mt-2 ml-3 mb-2"
+              style="
+                background-color: #2c2a59;
+                color: #d8def2;
+                border-radius: 50px;
+              "
+              >follow me on github</a
+            >
+            <br />
+            <span class="badge" style="background-color: #3e8c49;">nodejs</span>
+            <span class="badge badge-primary" style="background-color: #4a79d9;"
+              >express</span
+            >
+            <span class="badge badge-primary" style="background-color: #7798d9;"
+              >peerjs</span
+            >
+            <span class="badge badge-primary" style="background-color: #f27052;"
+              >socket.io</span
+            >
+            <span
+              class="badge badge-primary"
+              style="background-color: #d8def2; color: #2c2a59;"
+              >bootstrap4</span
+            >
+            <span class="badge badge-primary" style="background-color: #080a40;"
+              >fontawesome</span
+            >
+          </div>
         </div>
       </div>
     </section>
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <footer style="background-color: #2c2a59; height: 45px;">
+      <p
+        class="text-white text-center mt-1 pt-1"
+        style="font-family: 'Dancing Script', cursive;"
+      >
+        &COPY; creted by Abdellatif Ahammad
+      </p>
+    </footer>
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

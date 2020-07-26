@@ -87,3 +87,11 @@ function copy() {
   // /* Copy the text inside the text field */
   // document.execCommand("copy");
 }
+
+function join() {
+  var room = document.getElementById("join_room");
+  if (room.value == "") {
+  } else {
+    window.location.replace("/rooms/" + room.value);
+  }
+}
