@@ -1,8 +1,7 @@
 const socket = io("/");
 const videoGrid = document.getElementById("video-box");
 const myPeer = new Peer(undefined, {
-  host: "/",
-  port: "3001",
+  host: "420dac3efc08.ngrok.io",
 });
 const cpoied = false;
 const people = {};
