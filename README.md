@@ -20,38 +20,38 @@ disqus: hackmd
 
 1.  clone the app into your machine
 
-```bash=
+```bash
  $ git clone
 ```
 
 2.  change the directory to the project
 
-```bash=
+```bash
 $ cd
 ```
 
 3.  install the dependensies
 
-```bash=
+```bash
 $ yarn install
 # (or you can use npm)
 ```
 
 4.  download the peerjs localy using this commnad
 
-```bash=
+```bash
 $ npm install peer -g
 ```
 
 5.  then run it using 3001 port you can change the port
 
-```bash=
+```bash
 $ peerjs --port 3001
 ```
 
 6.  then lunch the app
 
-```bash=
+```bash
 $ yarn dev
 ```
 
@@ -65,7 +65,7 @@ $ yarn dev
 4. then get the link from ngrok and you have to change some lines in your code
    > script.js
 
-```javascript=
+```javascript
 const myPeer = new Peer(undefined, {
   host: "420dac3efc08.ngrok.io", //here you can put your new url like 420dac3efc08.ngrok.io
 });
@@ -73,7 +73,7 @@ const myPeer = new Peer(undefined, {
 
 > instead of this in script.js file line 3
 
-```javascript=
+```javascript
 const myPeer = new Peer(undefined, {
   host: "/",
   port: "3001", // if you change the port in peer command line ,make sure to chnage it here too :)
