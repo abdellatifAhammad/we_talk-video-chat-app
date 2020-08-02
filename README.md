@@ -5,14 +5,16 @@ disqus: hackmd
 
 # video chat app (google meet simple clone)
 
-![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
-![build](https://img.shields.io/appveyor/ci/:user/:repo.svg)
-![chat](https://img.shields.io/discord/:serverId.svg)
+![nodejs_version](https://img.shields.io/badge/nodejs-v10.16.3-brightgreen)
+![ejs](https://img.shields.io/badge/ejs-%5E3.1.3-blue)
+![express](https://img.shields.io/badge/express-%5E3.1.3-orange)
+![socket.io](https://img.shields.io/badge/socket.io-%5E2.3.0-ff69b4)
+![peerjs](https://img.shields.io/badge/peerjs-0.5.3-yellow)
 
 <!-- ## Table of Contents -->
 <!-- [TOC] -->
 
-## Users Guide
+## Users Guide :call_me_hand:
 
 ##### If you need just to set it up and use it without read a lot about I implement it ,so you can start from here!
 
@@ -21,38 +23,38 @@ disqus: hackmd
 1.  clone the app into your machine
 
 ```bash
- $ git clone
+git clone we_talk
 ```
 
 2.  change the directory to the project
 
 ```bash
-$ cd
+cd we_talk
 ```
 
 3.  install the dependensies
 
 ```bash
-$ yarn install
+yarn install
 # (or you can use npm)
 ```
 
 4.  download the peerjs localy using this commnad
 
 ```bash
-$ npm install peer -g
+npm install peer -g
 ```
 
 5.  then run it using 3001 port you can change the port
 
 ```bash
-$ peerjs --port 3001
+ peerjs --port 3001
 ```
 
 6.  then lunch the app
 
 ```bash
-$ yarn dev
+yarn dev
 ```
 
 7.  go to the browser and enter (https://localhost:3000/)
