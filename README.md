@@ -1,6 +1,6 @@
 ---
 title: "we talk project"
-disqus: hackmd
+disqus: a video chat app for the browser
 ---
 
 # video chat app (google meet simple clone)
@@ -85,14 +85,15 @@ const myPeer = new Peer(undefined, {
 5. ngrok http localhost:3000
 6. get the last link and send it to your freinds and start communicate :+1:
 
-## User story
+## Used technologies :100:
 
-## User flows
+> this project is simple implemntation of nice tech like webRTC(real time communacation ), peerjs ,and also express for simple backend logique , for the front end I chose just ejs as template engine , with bootstrap v4
 
-## Appendix and FAQ
+1. webRTC (https://webrtc.org/)
+2. peerjs (https://peerjs.com/)
+3. socket.io (https://socket.io/)
+4. nodejs (https://nodejs.org/en/)
+5. express (https://expressjs.com/)
+6. ejs,bootstrap (https://ejs.co/) (https://getbootstrap.com/)
 
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
-
-###### tags: `Templates` `Documentation`
+###### tags: `js` `nodejs` `webRTC` `socket.io` `peerjs` `expressjs` `html` `css`
