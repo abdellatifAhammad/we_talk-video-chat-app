@@ -4,7 +4,7 @@ description: a video chat app for the browser
 ---
 
 
-video chat app (google meet simple clone)
+video  chat app (google meet simple clone)
 ===
 ![nodejs_version](https://img.shields.io/badge/nodejs-v10.16.3-brightgreen)
 ![ejs](https://img.shields.io/badge/ejs-%5E3.1.3-blue)
@@ -18,8 +18,8 @@ video chat app (google meet simple clone)
 
 ## Users Guide :call_me_hand: 
 
-##### If you need just to set it up and use it without read a lot about I implement it  ,so you can start from here!
-> set it just localy (on your machine)
+##### If you need just to set it up and use it without reading a lot about I implement it, so you can start from here!
+> set it just locally (on your machine)
 
  1. clone the app into your machine
 ```bash
@@ -29,12 +29,12 @@ git clone we_talk
 ```bash 
 cd we_talk
 ```
- 3. install the dependensies
+ 3. install the dependencies
 ```bash
 yarn install 
 # (or you can use npm)
 ```
- 4. download the peerjs localy using this commnad 
+ 4. download the peerjs locally using this command 
 ```bash
 npm install peer -g
 ```
@@ -49,7 +49,7 @@ yarn dev
  7. go to the browser and enter (https://localhost:3000/)
 
 
-> set it for use it in large way :smile:
+> set it for use it in a large way :smile:
 1. do the same previews steps 
 2. install ngrok if you don't have it already on your machine
 3. ngrok http localhost:3001
@@ -57,7 +57,7 @@ yarn dev
 > script.js
 ```javascript
 const myPeer = new Peer(undefined, {
-  host: "420dac3efc08.ngrok.io",//here you can put your new url like 420dac3efc08.ngrok.io
+  host: "420dac3efc08.ngrok.io",//here you can put your new URL like 420dac3efc08.ngrok.io
 });
 ```
 > instead of this in script.js file line 3
@@ -68,12 +68,12 @@ const myPeer = new Peer(undefined, {
 });
 ```
 5. ngrok http localhost:3000
-6. get the last link and send it to your freinds and start communicate :+1: 
+6. get the last link and send it to your friends and start to communicate :+1: 
   
  
 Used technologies :100: 
 ---
-> this project is simple implemntation of nice tech like webRTC(real time communacation ), peerjs ,and also express for simple backend logique , for the front end I chose just ejs as template engine , with bootstrap v4 
+> this project is a simple implementation of nice tech like webRTC(real-time communacation ), peerjs ,and also express for simple backend logique , for the front end I chose just ejs as template engine , with bootstrap v4 
 1. webRTC (https://webrtc.org/)
 2. peerjs (https://peerjs.com/)
 3. socket.io (https://socket.io/)
